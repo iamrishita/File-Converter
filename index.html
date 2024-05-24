@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-and-name">
+            <img src=C:\Users\rishi\OneDrive\Desktop\ConvertTT.png alt="Logo" class="logo">
+            <span class="site-name">FILE CONVERTER</span>
+        </div>
+        <ul class="nav-links">
+            <li class="center dropdown">
+                <a href="#" class="dropdown-btn">Convert</a>
+                <div class="dropdown-content">
+                    <!-- Add dropdown content here -->
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <a href="#">Option 3</a>
+                </div>
+            </li>
+        <div class="dropdown-content"></div>
+        <li class="upward"><a href="#">Pricing</a></li>
+        <li class="forward"><a href="#">Help</a></li>
+    </ul>
+    </header>
+    <h3 class="subtitle">Convert as many files you want!</h3>
+    <div class="rectangle">
+        <div class="container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+            <path d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2z"/>
+            </svg>
+            <div class="drag-image">
+                <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                <h6><b>Drag & Drop File Here</b></h6>
+                <span><b>OR</b></span>
+                <button>Browse File</button>
+                <input type="file" hidden>
+                <input type="file" id="fileInput" hidden onchange="handleFileSelect()">
+                 <p id="fileStatus">No file selected.</p>
+                <script src="script.js"></script>
+              </div>
+            </div>
+            
+        </div>
+</div>
+<div class="Submit">
+<label for="convertTo">Convert to:</label>
+<select id="convertTo" name="convertTo" required>
+    <option value="pdf">PDF</option>
+    <option value="docx">DOCX</option>
+    <option value="txt">TXT</option>
+    <option value="jpg">JPG</option>
+    <!-- Add more options as needed -->
+</select>
+
+<button type="Submit"><a href="converted page.html" class="converted-button">Convert</a></button>
+</div>
+
+
+
+</body>
+</html>
